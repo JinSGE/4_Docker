@@ -1,0 +1,13 @@
+# 베이스 이미지
+FROM ubuntu:latest
+
+# [ RUN 명령의 실행 ]
+
+# 서브 쉘 실행 - shell 형식 로그 확인시 ( /bin/sh -c )이 앞에 자동으로 붙음.
+RUN echo shell 형식입니다.
+
+# 현재 쉘 실행 - Exec 형식
+RUN ["echo", "Exec 형식입니다."]
+
+# 현재 쉘 실행이지만, 강제적 서브 쉘 사용 ( "/bin/bash", "-c" )
+RUN ["/bin/bash", "-c", "echo 'Exec 형식에서 bash를 사용하였습니다.'"]
