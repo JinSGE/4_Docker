@@ -15,9 +15,11 @@ Python, Shell Script 등 관련 기술 이해가 필요
 역할 변수들
 =========
 이 역할에서 사용할 수 있는 변수들은 주로 각 Docker 프로젝트의 구성에 따라 달라지며, 
+
 각 폴더 내의 Dockerfile, compose 파일 등에 따라 정의. 주로 사용되는 변수들은 아래와 같습니다:
 
 예시)
+
 docker_image = Docker 이미지 이름
 
 container_name = 컨테이너 이름
